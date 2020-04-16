@@ -46,7 +46,6 @@ public class GenericTest {
                 System.out.println(String.format("第 %d 个泛型实参类型是： %s", i, tArgs[i]));
             }
         }
-
     }
 
 }

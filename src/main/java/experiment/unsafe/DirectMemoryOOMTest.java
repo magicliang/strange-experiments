@@ -14,7 +14,7 @@ public class DirectMemoryOOMTest {
         Field unsafeField = Unsafe.class.getDeclaredFields()[0];
         unsafeField.setAccessible(true);
         Unsafe unsafe = (Unsafe) unsafeField.get(null);
-        //从程序的测试结果而言，OOM 必然会导致程序中断退出。至少在没有线程恢复手段的情况下，这是一个自然的结果。
+        // 从程序的测试结果而言，OOM 必然会导致程序中断退出。至少在没有线程恢复手段的情况下，这是一个自然的结果。
         while (true) {
             unsafe.allocateMemory(_1MB);
         }
