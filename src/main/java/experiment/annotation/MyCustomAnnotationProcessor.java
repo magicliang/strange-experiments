@@ -12,7 +12,7 @@ import java.util.Set;
  * 用法：
  * 要在同一个类路径下才可以读到这个 processor，要不然就找不到么？
  * 一个使用 jar 类路径的用法：
- * avac -cp annotation-processing/target/annotation-processing-1.0.0-SNAPSHOT.jar -processor com.baeldung.annotation.processor.BuilderProcessor annotation-user/src/main/java/com/baeldung/annotation/Person.java
+ * javac -cp annotation-processing/target/annotation-processing-1.0.0-SNAPSHOT.jar -processor com.baeldung.annotation.processor.BuilderProcessor annotation-user/src/main/java/com/baeldung/annotation/Person.java
  * 这样要求我们用谷歌的 service 插件？
  * 或者使用 maven 插件？
  *
